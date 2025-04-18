@@ -1,0 +1,33 @@
+name: bodyharvest
+platform: n64
+basename: baserom
+base_path: .
+target_path: baserom.z64
+build_path: build
+linker_script_path: bodyharvest.ld
+extension: z64
+header:
+  entry: 0x80000400
+  stack_pointer: 0x80000000
+  boot_address: 0x80000400
+
+segments:
+  - name: header
+    type: header
+
+  - name: boot
+    type: bin
+    start: 0x00001000
+    vram: 0x80000400
+
+  - name: main
+    type: code
+    start: 0x00371240   # this came from your script (may need refining)
+    vram: 0x80371240
+    subsegments:
+      - [0x00371240, asm/main.s]  # fill this in more as you discover
+
+  - name: data
+    type: bin
+    start: 0x0XXXXXXX    # placeholder — will need to locate
+    vram: 0xXXXXXXXX

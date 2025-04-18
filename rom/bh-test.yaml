@@ -1,0 +1,28 @@
+name: body-harvest
+platform: n64
+version: usa
+hash: "BBB6666F5014A473747EE4145F036D9FB25D7348"
+
+# This is the size of your ROM in bytes
+ranges:
+  - [0x00000000, 0x00C00000]  # 12MB in hex
+
+# Assumes standard N64 entry point; update if you get better ELF info
+segments:
+  - [0x00000000, header, header]
+  - [0x00001000, code, main]  # Might need tweaking once split
+  - [0x00C00000]  # End marker
+
+header:
+  type: bin  # Not `n64` yet, since Splat auto-detects anyway
+  start: 0x00000000
+  vram: 0x00000000
+  subalign: 16
+
+main:
+  type: code
+  start: 0x00001000
+  vram: 0x80371240  # This is the *usual* for many N64 titles, may need changing
+  subalign: 16
+  bss_size: 0
+  symbol_name_format: $VRAM
