@@ -232,6 +232,7 @@ glabel func_8001B220
     /* 1BEF8 8001B2F8 8C389840 */  lw         $t8, %lo(jtbl_80039840)($at)
     /* 1BEFC 8001B2FC 03000008 */  jr         $t8
     /* 1BF00 8001B300 00000000 */   nop
+  jlabel .L8001B304
     /* 1BF04 8001B304 8E190004 */  lw         $t9, 0x4($s0)
     /* 1BF08 8001B308 30EC0002 */  andi       $t4, $a3, 0x2
     /* 1BF0C 8001B30C 24010003 */  addiu      $at, $zero, 0x3
@@ -268,6 +269,7 @@ glabel func_8001B220
     /* 1BF80 8001B380 AD0C0268 */   sw        $t4, 0x268($t0)
     /* 1BF84 8001B384 10000016 */  b          .L8001B3E0
     /* 1BF88 8001B388 AD000270 */   sw        $zero, 0x270($t0)
+  jlabel .L8001B38C
     /* 1BF8C 8001B38C 8E020004 */  lw         $v0, 0x4($s0)
     /* 1BF90 8001B390 30EF0002 */  andi       $t7, $a3, 0x2
     /* 1BF94 8001B394 304E0002 */  andi       $t6, $v0, 0x2
@@ -290,7 +292,7 @@ glabel func_8001B220
     /* 1BFD4 8001B3D4 15800002 */  bnez       $t4, .L8001B3E0
     /* 1BFD8 8001B3D8 AD0C0268 */   sw        $t4, 0x268($t0)
     /* 1BFDC 8001B3DC AD000270 */  sw         $zero, 0x270($t0)
-  .L8001B3E0:
+  jlabel .L8001B3E0
     /* 1BFE0 8001B3E0 50670004 */  beql       $v1, $a3, .L8001B3F4
     /* 1BFE4 8001B3E4 8FBF001C */   lw        $ra, 0x1C($sp)
     /* 1BFE8 8001B3E8 1000FF92 */  b          .L8001B234

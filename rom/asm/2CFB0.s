@@ -229,9 +229,3 @@ glabel func_8002C3B0
     /* 2D2B4 8002C6B4 00000000 */  nop
     /* 2D2B8 8002C6B8 00000000 */  nop
     /* 2D2BC 8002C6BC 00000000 */  nop
-
-glabel func_8002C6C0
-    /* 2D2C0 8002C6C0 3C0EA404 */  lui        $t6, %hi(D_A4040010)
-    /* 2D2C4 8002C6C4 03E00008 */  jr         $ra
-    /* 2D2C8 8002C6C8 ADC40010 */   sw        $a0, %lo(D_A4040010)($t6)
-    /* 2D2CC 8002C6CC 00000000 */  nop

@@ -79,6 +79,7 @@ build/bodyharvest.elf: \
     build/asm/23B90.o \
     build/asm/23C50.o \
     build/asm/23C60.o \
+    build/asm/245B0.o \
     build/asm/245F0.o \
     build/asm/24A80.o \
     build/asm/24B30.o \
@@ -121,6 +122,7 @@ build/bodyharvest.elf: \
     build/asm/2C720.o \
     build/asm/2CFA0.o \
     build/asm/2CFB0.o \
+    build/asm/2D2C0.o \
     build/asm/2D2D0.o \
     build/asm/2D310.o \
     build/asm/2D3A0.o \
@@ -211,6 +213,7 @@ build/bodyharvest.elf: \
     build/asm/23B90.o \
     build/asm/23C50.o \
     build/asm/23C60.o \
+    build/asm/245B0.o \
     build/asm/245F0.o \
     build/asm/24A80.o \
     build/asm/24B30.o \
@@ -253,6 +256,7 @@ build/bodyharvest.elf: \
     build/asm/2C720.o \
     build/asm/2CFA0.o \
     build/asm/2CFB0.o \
+    build/asm/2D2C0.o \
     build/asm/2D2D0.o \
     build/asm/2D310.o \
     build/asm/2D3A0.o \
@@ -344,6 +348,7 @@ build/bodyharvest.elf: \
     build/asm/23B90.o \
     build/asm/23C50.o \
     build/asm/23C60.o \
+    build/asm/245B0.o \
     build/asm/245F0.o \
     build/asm/24A80.o \
     build/asm/24B30.o \
@@ -386,6 +391,7 @@ build/bodyharvest.elf: \
     build/asm/2C720.o \
     build/asm/2CFA0.o \
     build/asm/2CFB0.o \
+    build/asm/2D2C0.o \
     build/asm/2D2D0.o \
     build/asm/2D310.o \
     build/asm/2D3A0.o \
@@ -402,6 +408,27 @@ build/bodyharvest.elf: \
     build/asm/2E390.o \
     build/asm/2E3E0.o \
     build/asm/2EAE0.o \
+    build/asm/data/3788C.rodata.o \
+    build/asm/data/378B0.rodata.o \
+    build/asm/data/38210.rodata.o \
+    build/asm/data/38220.rodata.o \
+    build/asm/data/38260.rodata.o \
+    build/asm/data/38FB0.rodata.o \
+    build/asm/data/392D0.rodata.o \
+    build/asm/data/3A480.rodata.o \
+    build/asm/data/3A490.rodata.o \
+    build/asm/data/3A4E0.rodata.o \
+    build/asm/data/3A770.rodata.o \
+    build/asm/data/3A7D0.rodata.o \
+    build/asm/data/3A7E0.rodata.o \
+    build/asm/data/3A7F0.rodata.o \
+    build/asm/data/3A840.rodata.o \
+    build/asm/data/3A920.rodata.o \
+    build/asm/data/3A980.rodata.o \
+    build/asm/data/3ABF0.rodata.o \
+    build/asm/data/3AC30.rodata.o \
+    build/asm/data/3DC00.rodata.o \
+    build/asm/data/3FC60.rodata.o \
     build/asm/1050.o \
     build/asm/53D0.o \
     build/asm/53F0.o \
@@ -476,6 +503,7 @@ build/bodyharvest.elf: \
     build/asm/23B90.o \
     build/asm/23C50.o \
     build/asm/23C60.o \
+    build/asm/245B0.o \
     build/asm/245F0.o \
     build/asm/24A80.o \
     build/asm/24B30.o \
@@ -518,6 +546,7 @@ build/bodyharvest.elf: \
     build/asm/2C720.o \
     build/asm/2CFA0.o \
     build/asm/2CFB0.o \
+    build/asm/2D2C0.o \
     build/asm/2D2D0.o \
     build/asm/2D310.o \
     build/asm/2D3A0.o \
@@ -616,6 +645,7 @@ build/asm/23980.o:
 build/asm/23B90.o:
 build/asm/23C50.o:
 build/asm/23C60.o:
+build/asm/245B0.o:
 build/asm/245F0.o:
 build/asm/24A80.o:
 build/asm/24B30.o:
@@ -658,6 +688,7 @@ build/asm/2C690.o:
 build/asm/2C720.o:
 build/asm/2CFA0.o:
 build/asm/2CFB0.o:
+build/asm/2D2C0.o:
 build/asm/2D2D0.o:
 build/asm/2D310.o:
 build/asm/2D3A0.o:
@@ -748,6 +779,7 @@ build/asm/23980.o:
 build/asm/23B90.o:
 build/asm/23C50.o:
 build/asm/23C60.o:
+build/asm/245B0.o:
 build/asm/245F0.o:
 build/asm/24A80.o:
 build/asm/24B30.o:
@@ -790,6 +822,7 @@ build/asm/2C690.o:
 build/asm/2C720.o:
 build/asm/2CFA0.o:
 build/asm/2CFB0.o:
+build/asm/2D2C0.o:
 build/asm/2D2D0.o:
 build/asm/2D310.o:
 build/asm/2D3A0.o:
@@ -881,6 +914,7 @@ build/asm/23980.o:
 build/asm/23B90.o:
 build/asm/23C50.o:
 build/asm/23C60.o:
+build/asm/245B0.o:
 build/asm/245F0.o:
 build/asm/24A80.o:
 build/asm/24B30.o:
@@ -923,6 +957,7 @@ build/asm/2C690.o:
 build/asm/2C720.o:
 build/asm/2CFA0.o:
 build/asm/2CFB0.o:
+build/asm/2D2C0.o:
 build/asm/2D2D0.o:
 build/asm/2D310.o:
 build/asm/2D3A0.o:
@@ -939,6 +974,27 @@ build/asm/2E2F0.o:
 build/asm/2E390.o:
 build/asm/2E3E0.o:
 build/asm/2EAE0.o:
+build/asm/data/3788C.rodata.o:
+build/asm/data/378B0.rodata.o:
+build/asm/data/38210.rodata.o:
+build/asm/data/38220.rodata.o:
+build/asm/data/38260.rodata.o:
+build/asm/data/38FB0.rodata.o:
+build/asm/data/392D0.rodata.o:
+build/asm/data/3A480.rodata.o:
+build/asm/data/3A490.rodata.o:
+build/asm/data/3A4E0.rodata.o:
+build/asm/data/3A770.rodata.o:
+build/asm/data/3A7D0.rodata.o:
+build/asm/data/3A7E0.rodata.o:
+build/asm/data/3A7F0.rodata.o:
+build/asm/data/3A840.rodata.o:
+build/asm/data/3A920.rodata.o:
+build/asm/data/3A980.rodata.o:
+build/asm/data/3ABF0.rodata.o:
+build/asm/data/3AC30.rodata.o:
+build/asm/data/3DC00.rodata.o:
+build/asm/data/3FC60.rodata.o:
 build/asm/1050.o:
 build/asm/53D0.o:
 build/asm/53F0.o:
@@ -1013,6 +1069,7 @@ build/asm/23980.o:
 build/asm/23B90.o:
 build/asm/23C50.o:
 build/asm/23C60.o:
+build/asm/245B0.o:
 build/asm/245F0.o:
 build/asm/24A80.o:
 build/asm/24B30.o:
@@ -1055,6 +1112,7 @@ build/asm/2C690.o:
 build/asm/2C720.o:
 build/asm/2CFA0.o:
 build/asm/2CFB0.o:
+build/asm/2D2C0.o:
 build/asm/2D2D0.o:
 build/asm/2D310.o:
 build/asm/2D3A0.o:

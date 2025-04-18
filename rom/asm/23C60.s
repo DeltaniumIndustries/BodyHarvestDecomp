@@ -183,12 +183,15 @@ glabel func_800230A0
     /* 23EDC 800232DC 8C2A9C10 */  lw         $t2, %lo(jtbl_80039C10)($at)
     /* 23EE0 800232E0 01400008 */  jr         $t2
     /* 23EE4 800232E4 00000000 */   nop
+  jlabel .L800232E8
     /* 23EE8 800232E8 2401DFFF */  addiu      $at, $zero, -0x2001
     /* 23EEC 800232EC 1000FFF0 */  b          .L800232B0
     /* 23EF0 800232F0 02018024 */   and       $s0, $s0, $at
+  jlabel .L800232F4
     /* 23EF4 800232F4 2401BFFF */  addiu      $at, $zero, -0x4001
     /* 23EF8 800232F8 1000FFED */  b          .L800232B0
     /* 23EFC 800232FC 02018024 */   and       $s0, $s0, $at
+  jlabel .L80023300
     /* 23F00 80023300 40095800 */  mfc0       $t1, $11 /* handwritten instruction */
     /* 23F04 80023304 40895800 */  mtc0       $t1, $11 /* handwritten instruction */
     /* 23F08 80023308 0C008D79 */  jal        func_800235E4
@@ -197,6 +200,7 @@ glabel func_800230A0
     /* 23F14 80023314 34217FFF */  ori        $at, $at, (0xFFFF7FFF & 0xFFFF)
     /* 23F18 80023318 1000FFE5 */  b          .L800232B0
     /* 23F1C 8002331C 02018024 */   and       $s0, $s0, $at
+  jlabel .L80023320
     /* 23F20 80023320 2401F7FF */  addiu      $at, $zero, -0x801
     /* 23F24 80023324 02018024 */  and        $s0, $s0, $at
     /* 23F28 80023328 240A0004 */  addiu      $t2, $zero, 0x4
@@ -219,6 +223,7 @@ glabel func_800230A0
     /* 23F68 80023368 00000000 */   nop
     /* 23F6C 8002336C 1000FFD0 */  b          .L800232B0
     /* 23F70 80023370 00000000 */   nop
+  jlabel .L80023374
     /* 23F74 80023374 3C088003 */  lui        $t0, %hi(D_80035620)
     /* 23F78 80023378 25085620 */  addiu      $t0, $t0, %lo(D_80035620)
     /* 23F7C 8002337C 8D080000 */  lw         $t0, 0x0($t0)
@@ -306,6 +311,7 @@ glabel func_800230A0
     /* 240A8 800234A8 2401FBFF */  addiu      $at, $zero, -0x401
     /* 240AC 800234AC 1000FF80 */  b          .L800232B0
     /* 240B0 800234B0 02018024 */   and       $s0, $s0, $at
+  jlabel .L800234B4
     /* 240B4 800234B4 8F5B0118 */  lw         $k1, 0x118($k0) /* handwritten instruction */
     /* 240B8 800234B8 2401EFFF */  addiu      $at, $zero, -0x1001
     /* 240BC 800234BC 3C098003 */  lui        $t1, %hi(D_8003561C)
@@ -330,6 +336,7 @@ glabel func_800230A0
     /* 24104 80023504 0361D824 */  and        $k1, $k1, $at
     /* 24108 80023508 10000017 */  b          .L80023568
     /* 2410C 8002350C AD5B0118 */   sw        $k1, 0x118($t2) /* handwritten instruction */
+  jlabel .L80023510
     /* 24110 80023510 2401FDFF */  addiu      $at, $zero, -0x201
     /* 24114 80023514 01014024 */  and        $t0, $t0, $at
     /* 24118 80023518 40886800 */  mtc0       $t0, $13 /* handwritten instruction */
@@ -338,6 +345,7 @@ glabel func_800230A0
     /* 24124 80023524 2401FDFF */  addiu      $at, $zero, -0x201
     /* 24128 80023528 1000FF61 */  b          .L800232B0
     /* 2412C 8002352C 02018024 */   and       $s0, $s0, $at
+  jlabel .L80023530
     /* 24130 80023530 2401FEFF */  addiu      $at, $zero, -0x101
     /* 24134 80023534 01014024 */  and        $t0, $t0, $at
     /* 24138 80023538 40886800 */  mtc0       $t0, $13 /* handwritten instruction */
@@ -353,7 +361,7 @@ glabel func_800230A0
     /* 2415C 8002355C 24040050 */   addiu     $a0, $zero, 0x50
     /* 24160 80023560 10000001 */  b          .L80023568
     /* 24164 80023564 00000000 */   nop
-  .L80023568:
+  jlabel .L80023568
     /* 24168 80023568 3C0A8003 */  lui        $t2, %hi(D_800363A8)
     /* 2416C 8002356C 8D4A63A8 */  lw         $t2, %lo(D_800363A8)($t2)
     /* 24170 80023570 8F490004 */  lw         $t1, 0x4($k0) /* handwritten instruction */
@@ -653,25 +661,3 @@ glabel func_80023824
     /* 245A4 800239A4 00002025 */   or        $a0, $zero, $zero
     /* 245A8 800239A8 00000000 */  nop
     /* 245AC 800239AC 00000000 */  nop
-
-/* Handwritten function */
-glabel func_800239B0
-    /* 245B0 800239B0 40086000 */  mfc0       $t0, $12 /* handwritten instruction */
-    /* 245B4 800239B4 2401FFFE */  addiu      $at, $zero, -0x2
-    /* 245B8 800239B8 01014824 */  and        $t1, $t0, $at
-    /* 245BC 800239BC 40896000 */  mtc0       $t1, $12 /* handwritten instruction */
-    /* 245C0 800239C0 31020001 */  andi       $v0, $t0, 0x1
-    /* 245C4 800239C4 00000000 */  nop
-    /* 245C8 800239C8 03E00008 */  jr         $ra
-    /* 245CC 800239CC 00000000 */   nop
-
-/* Handwritten function */
-glabel func_800239D0
-    /* 245D0 800239D0 40086000 */  mfc0       $t0, $12 /* handwritten instruction */
-    /* 245D4 800239D4 01044025 */  or         $t0, $t0, $a0
-    /* 245D8 800239D8 40886000 */  mtc0       $t0, $12 /* handwritten instruction */
-    /* 245DC 800239DC 00000000 */  nop
-    /* 245E0 800239E0 00000000 */  nop
-    /* 245E4 800239E4 03E00008 */  jr         $ra
-    /* 245E8 800239E8 00000000 */   nop
-    /* 245EC 800239EC 00000000 */  nop
